@@ -1,0 +1,245 @@
+/* Reset CSS for all elements */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+#navbar::before{
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: -1;
+  opacity: 0.6;
+}
+/* Navigation Bar : Logo and Image */
+#logo{
+  margin: 5px 5px;
+}
+#logo img{
+  height: 40px;
+  margin: 2px 2px;
+}
+/* Navigation Bar : List Styling */
+#navbar ul{
+  display: flex;
+}
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a{
+  color: #fafafa;
+padding: 10px 30px;
+/* border: 2px solid red; */
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 150px;
+  height: 220px;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  background: url('../images/bg5.jpg') no-repeat center center/cover;
+}
+#home::before{
+  content: "";
+  /* background: url('../images/bg5.jpg') no-repeat center center/cover; */
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#home h2{
+  color: #c41019;
+  text-align: center;
+}
+#home p{
+  color: #160fe1;
+  text-align: center;
+
+}
+/* Services Section */
+#Services{
+  display: flex;
+  align-items: center;
+  background-color: darkgray;
+  padding: 10px 132px;
+}
+.box{
+  border: 2px solid cyan;
+  border-radius: 13px;
+  margin: 5px 10px;
+  padding: 5px 10px;
+}
+.box img{
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+/* Contact Us */
+#contact{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 50px;
+  /* margin: 5px 10px; */
+  background: url("/images/contact-bg.jpg") no-repeat center center/cover;
+  color: rgb(112, 245, 245);
+}
+#appointment-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px auto;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/appointment.jpg") no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+}
+#appointment-cont{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/appointment.jpg") no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+}
+#inp-cont{
+  display: flex;
+  /* flex-direction: column; */
+}
+#btn-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn-cont button{
+  display: block;
+  width: 390px;
+}
+.form-box {
+  margin: 0px 20px;
+}
+
+.form-group input {
+  display: block;
+  border-radius: 5px;
+  width: 400px;
+  height: 20px;
+  padding: 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Cardo', serif;
+}
+
+.form-group textarea {
+  display: block;
+  border-radius: 5px;
+  width: 400px;
+  height: 100%;
+  padding: 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Cardo', serif;
+}
+.form-group label{
+  font-size: 1rem;
+  font-family: 'Cardo', serif;
+  
+}
+.apt-group input {
+  display: block;
+  border-radius: 5px;
+  width: 250px;
+  height: 20px;
+  padding: 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Cardo', serif;
+}
+.apt-group textarea {
+  display: block;
+  border-radius: 5px;
+  width: 250px;
+  height: 100%;
+  padding: 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Cardo', serif;
+}
+.apt-group label{
+  font-size: 1rem;
+  font-family: 'Cardo', serif;
+}
+.apt-group select {
+  display: block;
+  border-radius: 5px;
+  width: 250px;
+  height: 100%;
+  padding: 3px 10px;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Cardo', serif;
+}
+.form-group button{
+  display: block;
+  width: 390px;
+}
+/* Footer */
+.foot{
+  display: flex;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-family: 'Cardo', serif;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+/* utility classes */
+.h-primary{
+  font-size: 2.5rem;
+  font-family: 'Cardo', serif;
+}
+.h-secondary{
+  font-size: 1.5rem;
+  font-family: 'Cardo', serif;
+}
+p{
+  font-family: 'Cardo', serif;
+  font-size: 1.2rem;
+}
+.center{
+  text-align: center;
+}
+.btn{
+  margin: 12px 15px;
+  padding: 8px 17px;
+  background-color: black;
+  color: white;
+  border: 2px solid silver;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+}

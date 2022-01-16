@@ -1,0 +1,1 @@
+var myMultiSelect = new myMultiSelect('.multiSelect');
