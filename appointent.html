@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Path Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jav.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Estonia&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo2.png" alt="BharatPathLab">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="test.html">Tests</a></li>
+            <li class="item"><a href="appointent.html">Appointment</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2 class="h-primary center">Welcome to Bharat Pathology Lab</h2>
+        <p>Lorem, ipsum dolor sit amet adipisicing elit. In vit perunde. Sunt dicta beatae at rem voluptatem molestias.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Book Your Appointment</button>
+    </section>
+    <section id="appointment-cont">
+        <form action="">
+            <h2 class="h-secondary center">Book Your Appointment Now</h2>
+            <div id="inp-cont">
+                <div class="form-box">
+                    <div class="apt-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="apt-group">
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="phone" id="phone" placeholder="Enter your Phone Number">
+                    </div>
+                    <div class="apt-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your E-mail Id">
+                    </div>
+                    <div class="apt-group">
+                        <label for="message">Message</label>
+                        <textarea col="6" row="10" name="message" id="message"
+                            placeholder="Enter your message"> </textarea>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <!-- <div class="apt-group">
+                        <label for="test">Test (Hold ctrl to select multile items.)</label>
+                        <select id="test" >
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div> -->
+                    <div class="multiselect">
+                        <input type="checkbox" name="CBC" id="cbc"><label for="cbc">cbc</label>
+                        <input type="checkbox" name="LFT" id="lft"><label for="lft">LFT</label>
+                        <input type="checkbox" name="KFT" id="kft"><label for="kft">KFT</label>
+                        <input type="checkbox" name="Blood Sugar" id="bsg"><label for="bsg">Blood Sygar</label>
+                    </div>
+                    <div class="apt-group">
+                        <label for="phone">Phone</label>
+                        <input type="phone" name="phone" id="phone" placeholder="Enter your Phone Number">
+                    </div>
+                    <div class="apt-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your E-mail Id">
+                    </div>
+                    <div class="apt-group">
+                        <label for="message">Message</label>
+                        <textarea col="6" row="10" name="message" id="message"
+                            placeholder="Enter your message"> </textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="btn-cont">
+                <div class="apt-group">
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="foot">
+            Copyright &copy; Bharat Pathology Lab. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
